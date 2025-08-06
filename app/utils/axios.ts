@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 // Axios instance with interceptors
 const axiosInstance = axios.create({
-    baseURL: import.meta.env.API_URL,
+    baseURL: import.meta.env.VITE_API_URL,
     headers: { "Content-Type": "application/json" },
     withCredentials: true, // Required for HTTP-only cookies
 });
